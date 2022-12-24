@@ -24,7 +24,7 @@ _    _                 __  __    __      __   _                 ____        _
     /* Sets bot's presence */
     client.user.setPresence({
         activity: {
-            name: 'v!help',
+            name: '!help',
             type: 'STREAMING'
         },
         status: 'online',

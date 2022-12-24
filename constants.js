@@ -11,7 +11,7 @@ const config = Hjson.parse(fs.readFileSync(path.resolve(__dirname, "./config.hjs
 const {token} = config;
 
 /* Default bot prefix */
-const defaultPrefix = "v!";
+const defaultPrefix = "!";
 
 /* Discord Client */
 const client = new Discord.Client();

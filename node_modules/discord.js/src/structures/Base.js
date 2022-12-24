@@ -4,6 +4,7 @@ const Util = require('../util/Util');
 
 /**
  * Represents a data model that is identifiable by a Snowflake (i.e. Discord API data models).
+ * @abstract
  */
 class Base {
   constructor(client) {
@@ -20,7 +21,9 @@ class Base {
     return Object.assign(Object.create(this), this);
   }
 
-  _patch(data) { return data; }
+  _patch(data) {
+    return data;
+  }
 
   _update(data) {
     const clone = this._clone();
