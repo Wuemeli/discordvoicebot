@@ -16,13 +16,6 @@ const defaultPrefix = "!";
 /* Discord Client */
 const client = new Discord.Client();
 
-/* Database login */
-/*
-const { databaseName, databaseClusterName, databaseClusterUserName, databaseClusterUserPassword } = config;
-const databaseURL = `mongodb+srv://${databaseClusterUserName}:${databaseClusterUserPassword}@${databaseClusterName}.gcp.mongodb.net/${databaseName}?retryWrites=true&w=majority`;
-mongoose.connect(databaseURL, {useNewUrlParser: true});
-*/
-
 /* Object that contains every guild's recorder, stream and recording author id. The guild object is resetted when not recording, and is full when recording. */
 const audioStreamPerGuild = {};
 /*
